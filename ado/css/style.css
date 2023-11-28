@@ -1,0 +1,115 @@
+/*ESTILO GERAL*/
+
+body{
+    background-image: url(../img/filmes.png);
+    background-color: black;
+    margin: 40px;
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+#img_redonda {
+    height: 90px;
+    width: 100px;
+}
+
+/*ESTILO DA CABEÇALHO*/
+header{
+    padding: 5px 3%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: 	#FF1493;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 59px;
+}
+
+.topo-do-site span {
+    color: #FF1493;
+}
+
+.txt-topo-do-site h2 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .txt-topo-do-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.desktop ul {
+    list-style-type: none;
+}
+
+.desktop li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+nav a:hover{
+    color: 	#FF1493;
+    transform: scale(1.05);
+}
