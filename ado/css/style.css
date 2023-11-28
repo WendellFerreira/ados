@@ -1,8 +1,7 @@
 /*ESTILO GERAL*/
 
 body{
-    background-image: url(../img/filmes.png);
-    background-color: black;
+    background-color: #fff;
     margin: 40px;
     height: 100vh;
 }
@@ -23,41 +22,73 @@ body{
     display: flex;
 }
 
-#img_redonda {
-    height: 90px;
-    width: 100px;
+#img-site {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.wf-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF00;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.copy {
+    color: #fff;
+    padding: 30%;
 }
 
 /*ESTILO DA CABEÇALHO*/
 header{
-    padding: 5px 3%;
+    padding: 40px 4%;
 }
 
 header > .interface{
     display: flex;
-    align-items: last baseline;
+    align-items: center;
     justify-content: space-between;
 }
 
+#img_redonda{
+    height: 60px;
+    width: 50px;
+    border-radius: 60%;
+}
+
 header a{
-    color: #fff;
+    color: #5c5c5c;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
 header a:hover{
-    color: 	#FF1493;
+    color: #fff;
     transform: scale(1.05);
 }
 
-header nav ul {
+header nav ul{
     list-style-type: none;
 }
 
-header nav li {
+header nav li{
     display: inline-block;
-    padding: 0 30px;
+    padding: 0 40px;
+}
+
+.wf-contato button:hover{
+    box-shadow: 0px 0px 8px #00ff00;
+    transform: scale(1.05);
+}
+
+span {
+    color: #A020F0;
 }
 
 /* ESTILO DO TOPO DO SITE */
@@ -68,24 +99,14 @@ section.topo-do-site .flex {
     gap: 90px;
 }
 
-.topo-do-site h1 {
-    color: #fff;
-    font-size: 59px;
-}
-
-.topo-do-site span {
-    color: #FF1493;
-}
-
-.txt-topo-do-site h2 {
+h1 {
     color: #fff;
     font-size: 42px;
     line-height: 40px;
 }
 
-p {
-    color: #fff;
-    margin: 40px 0;
+.topo-do-site .txt-topo-do-site h1 span {
+    color: #00FF00;
 }
 
 .topo-do-site .txt-topo-do-site p {
@@ -93,23 +114,16 @@ p {
     margin: 40px 0;
 }
 
-.desktop ul {
-    list-style-type: none;
+.topo-do-site .img-topo-do-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-.desktop li {
-    display: inline-block;
-    padding: 0 40px;
-}
-
-nav a{
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    transition: .2s;
-}
-
-nav a:hover{
-    color: 	#FF1493;
-    transform: scale(1.05);
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
 }
